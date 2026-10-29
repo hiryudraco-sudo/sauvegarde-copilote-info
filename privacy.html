@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="no-referrer"><title>Confidentialité — Sauvegarde Copilote</title><style>body{font-family:system-ui,sans-serif;line-height:1.65;color:#243047;background:#f5f7fa;margin:0}main{max-width:760px;margin:48px auto;padding:32px;background:white;border-radius:12px}a{color:#174f9e}h1,h2{line-height:1.25}footer{margin-top:32px;color:#526077} @media(max-width:600px){main{margin:12px;padding:20px}}</style></head>
+<body><main><h1>Politique de confidentialité</h1>
+<p><a href="./">Accueil — Sauvegarde Copilote</a></p>
+<h2>Objet et responsable</h2>
+<p>Sauvegarde Copilote est une application personnelle administrée par le titulaire du compte GitHub <a href="https://github.com/hiryudraco-sudo">hiryudraco-sudo</a>. Elle sert exclusivement à conserver et vérifier ses propres sauvegardes chiffrées sur son Google Drive.</p>
+<h2>Données et autorisations utilisées</h2>
+<p>L’application utilise les autorisations OAuth Google pour accéder à Google Drive avec la portée <code>https://www.googleapis.com/auth/drive.file</code>. Cette portée concerne les fichiers créés par l’application ou explicitement autorisés pour elle. Le traitement utilise les noms, identifiants, métadonnées et contenus des archives afin de les déposer et de vérifier leur transfert ; cette autorisation permet également leur suppression.</p>
+<p>Les exports PostgreSQL sont chiffrés avec age avant leur envoi. Google Drive reçoit l’archive chiffrée ; la clé privée de déchiffrement n’est pas confiée à ce traitement.</p>
+<h2>Traitement et protection</h2>
+<p>Le traitement s’exécute sur GitHub Actions et le stockage de destination est Google Drive. Les identifiants nécessaires sont conservés dans les secrets GitHub. Les exports en clair sont créés dans un répertoire temporaire du traitement, puis supprimés à sa fin. Le propriétaire conserve sa clé privée séparément.</p>
+<h2>Utilisation et partage</h2>
+<p>Les données accessibles via Google ne sont ni vendues, ni utilisées pour la publicité, ni transmises à un modèle d’intelligence artificielle pour son entraînement. Leur utilisation est limitée au fonctionnement des sauvegardes personnelles. GitHub et Google interviennent comme fournisseurs techniques selon leurs propres conditions et politiques.</p>
+<h2>Conservation et suppression</h2>
+<p>Les archives restent dans le Google Drive du propriétaire jusqu’à leur suppression par celui-ci ou par une règle de conservation qu’il configure. Il peut supprimer les archives dans Drive et révoquer l’autorisation de l’application dans les paramètres de sécurité de son compte Google. La révocation de l’accès ne supprime pas les archives déjà stockées.</p>
+<h2>Ce site et contact</h2>
+<p>Ces pages n’intègrent ni formulaire, ni outil d’analyse d’audience, ni script ou cookie applicatif. Elles sont hébergées par GitHub Pages, qui peut traiter les données techniques de connexion conformément à sa <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">politique de confidentialité</a>.</p>
+<p>Pour contacter l’administrateur, utiliser les moyens publics indiqués sur son <a href="https://github.com/hiryudraco-sudo">profil GitHub</a>. Ne pas publier de secret ou de contenu de sauvegarde dans un échange public.</p><footer>Application personnelle • Mise à jour : 29 octobre 2026</footer></main></body>
+</html>
